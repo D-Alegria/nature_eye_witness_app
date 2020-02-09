@@ -109,8 +109,15 @@ class _CreateAlertFormState extends State<CreateAlertForm> {
                   );
 
                   dynamic result = await AlertService().createAlert(alert);
-                  if (result == null){
+                  if (result == null) {
                     widget.loader();
+                    Scaffold.of(context).showSnackBar(
+                      SnackBar(
+                        // duration: Duration(seconds: 10),
+                        content: Text("Successfully reported those guys"),
+                        // elevation: 3,
+                      ),
+                    );
                   }
                 }
               },

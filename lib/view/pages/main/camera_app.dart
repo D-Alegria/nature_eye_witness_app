@@ -84,8 +84,8 @@ class _CameraScreenState extends State {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Click To Share'),
-        backgroundColor: Colors.blueGrey,
+        title: const Text('Eye Witness Report', style: TextStyle(color: Colors.white),),
+        backgroundColor: Colors.black,
       ),
       body: Container(
         child: SafeArea(
@@ -142,8 +142,8 @@ class _CameraScreenState extends State {
           mainAxisSize: MainAxisSize.max,
           children: [
             FloatingActionButton(
-                child: Icon(Icons.camera),
-                backgroundColor: Colors.blueGrey,
+                child: Icon(Icons.camera,color: Colors.white,),
+                backgroundColor: Colors.black,
                 onPressed: () {
                   _onCapturePressed(context);
                 })

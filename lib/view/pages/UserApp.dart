@@ -3,7 +3,6 @@ import 'package:nature_eye_witness_app/view/pages/main/home_page.dart';
 import 'package:nature_eye_witness_app/view/pages/main/profile_page.dart';
 
 import 'main/eye_witness_page.dart';
-import 'main/feed_page.dart';
 
 class UserApp extends StatefulWidget {
   @override
@@ -35,7 +34,7 @@ class _UserAppState extends State<UserApp> {
                 color: Colors.black,
               ),
               icon: Icon(
-                Icons.home,
+                Icons.camera,
                 color: Colors.black26,
               ),
               title: Text("")),
@@ -49,7 +48,7 @@ class _UserAppState extends State<UserApp> {
               color: Colors.black26,
             ),
             title: Text(
-              "Account",
+              "",
               style: TextStyle(color: Colors.white),
             ),
           ),
